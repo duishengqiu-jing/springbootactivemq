@@ -1,0 +1,10 @@
+spring:
+  activemq:
+    broker-url: tcp://172.16.157.132:61616
+    user: admin
+    password: admin
+
+  #默认spring boot整合activemq的时候默认只支持点对点queue，
+  #要是用topic需要配置
+  jms:
+    pub-sub-domain: true
